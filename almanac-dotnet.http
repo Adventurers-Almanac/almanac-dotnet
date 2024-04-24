@@ -1,0 +1,6 @@
+@almanac_dotnet_HostAddress = http://localhost:5146
+
+GET {{almanac_dotnet_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
