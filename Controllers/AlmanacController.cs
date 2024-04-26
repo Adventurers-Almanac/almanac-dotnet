@@ -17,6 +17,7 @@ namespace AdventurersAlmanac.Controllers
         [HttpPost("CreateNewAlmanac")]
         public async Task<IActionResult> CreateNewAlmanac([FromBody] CreateNewAlmanacCommand command)
         {
+            System.Console.WriteLine("Creating new almanac...");
             CreateNewAlmanacCommandHandler handler = new CreateNewAlmanacCommandHandler();
 
             await handler.Handle(command, CancellationToken.None);

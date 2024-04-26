@@ -9,6 +9,7 @@ namespace AdventurersAlmanac.Handlers.Commands
     {
         public async Task<string> Handle(CreateNewAlmanacCommand request, CancellationToken cancellationToken)
         {
+            System.Console.WriteLine("Handling creaton of new almanac...");
             // TODO: Implement the logic to handle the CreateNewAlmanacCommand
             // You can access the properties of the command using request.PropertyName
 
@@ -16,6 +17,8 @@ namespace AdventurersAlmanac.Handlers.Commands
             // var almanac = new Almanac(request.Title, request.Description);
             // _almanacRepository.Add(almanac);
             // await _almanacRepository.SaveChangesAsync();
+
+
 
             return "Almanac created successfully.";
         }
